@@ -1,6 +1,10 @@
-root_file: histograms.root
-nominal_histogram: 80.2
+root_file: histograms_2mil_7masses.root
+nominal_histogram: 80.3692
 histograms_to_compare:
-  - 78.9
-  - 81.4
-distribution: muon0Pt
+  - 80.1192
+  - 80.2692
+  - 80.3192
+  - 80.4192
+  - 80.4692
+  - 80.6192
+distribution: MUSIC_2mil_7masses_leptonic_lepton1Pt

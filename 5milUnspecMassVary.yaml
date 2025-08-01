@@ -1,0 +1,43 @@
+ratio:
+  reference: 3
+  yaxis:
+    min: 0.9
+    max: 1.1
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.6192_4mil.root
+    title: 80.6192 GeV +250 MeV
+    crosssection: 1.7768
+    style:
+      linecolor: kOrange
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.4692_5mil.root
+    title: 80.4692 GeV +100 MeV
+    crosssection: 1.78668
+    style:
+      linecolor: kRed
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.4192_5mil.root
+    title: 80.4192 GeV +50 MeV
+    crosssection: 1.7876  
+    style:
+      linecolor: kMagenta
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.3692_5mil.root
+    title: 80.3692 GeV PDG Mass
+    crosssection: 1.7897
+    style:
+      linecolor: kViolet
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.3192_5mil.root
+    title: 80.3192 GeV -50 MeV
+    crosssection: 1.79272  
+    style:
+      linecolor: kBlue
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.2692_4mil.root
+    title: 80.2692 GeV -100 MeV
+    crosssection: 1.790075
+    style:
+      linecolor: kCyan
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.1192_5mil.root
+    title: 80.1192 GeV -250 MeV
+    crosssection: 1.80302
+    style:
+       linecolor: kGreen     
+

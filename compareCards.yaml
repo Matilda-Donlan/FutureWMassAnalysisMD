@@ -1,0 +1,17 @@
+ratio:
+  reference: 1
+  yaxis:
+    min: 0.5
+    max: 1.5
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.3692_default_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: Default
+    style:
+      linecolor: kBlue
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.3692_MuC_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: MUSIC MCD
+    style:
+      linecolor: kRed
+
+

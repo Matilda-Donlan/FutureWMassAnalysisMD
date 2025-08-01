@@ -1,10 +1,10 @@
-root_file: histograms_2mil_7masses.root
-nominal_histogram: 80.3692
+root_file: histograms_5mil_7masses_csnorm.root
+nominal_histogram: 80.3692 PDG Mass
 histograms_to_compare:
-  - 80.1192
-  - 80.2692
-  - 80.3192
-  - 80.4192
-  - 80.4692
-  - 80.6192
-distribution: MUSIC_2mil_7masses_leptonic_lepton1Pt
+  - 80.1192 -250 MeV
+  - 80.2692 -100 MeV
+  - 80.3192 -50 MeV
+  - 80.4192 +50 MeV
+  - 80.4692 +100 MeV
+  - 80.6192 +250 MeV
+distribution: MUSIC_5mil_7masses_csnorm_leptonic_lepton1Pt

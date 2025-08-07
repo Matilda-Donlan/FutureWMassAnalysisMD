@@ -1,0 +1,29 @@
+ratio:
+  reference: 4
+  yaxis:
+    min: 0.8
+    max: 1.2
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/testdata_blind_mw.root
+    title: 80.3692 GeV Pseudo
+    style:
+      linecolor: kBlue
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.1192_MuMET_wpjj_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: 80.1192 GeV -250 MeV
+    style:
+      linecolor: kRed
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.3192_MuMET_wpjj_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: 80.3192 GeV -50 MeV
+    style:
+      linecolor: kPink
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.4192_MuMET_wpjj_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: 80.4192 GeV +50 MeV
+    style:
+      linecolor: kSpring
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_80.3692_MuMET_wpjj_1mil_1/Events/run_01/tag_1_delphes_events.root
+    title: 80.3692 GeV PDG Mass
+    style:
+      linecolor: kOrange
+      
+

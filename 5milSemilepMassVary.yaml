@@ -1,0 +1,47 @@
+ratio:
+  # reference: 3
+  yaxis:
+    min: 0.9
+    max: 1.1
+    title: ratio
+inputs:
+  # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.6192_MuMET_wpjj_5mil.root
+  # title: 80.6192 GeV +250 MeV
+  # crosssection: 0.256762
+  # style:
+  #   linecolor: kOrange
+  # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.4692_MuMET_wpjj_5mil.root
+  # title: 80.4692 GeV +100 MeV
+  # crosssection: 0.255048
+  # style:
+  #   linecolor: kRed
+  # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.4192_MuMET_wpjj_5mil.root
+  # title: 80.4192 GeV +50 MeV
+  # crosssection: 0.25458  
+  # style:
+  #   linecolor: kMagenta
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.3692_MuMET_wpjj_5mil.root
+    title: 80.3692 GeV PDG Mass
+    crosssection: 0.253978
+    style:
+      linecolor: kViolet
+        # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.3192_MuMET_wpjj_5mil.root
+        # title: 80.3192 GeV -50 MeV
+        #  crosssection: 0.25338  
+        # style:
+        # linecolor: kBlue
+        # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.2692_MuMET_wpjj_5mil.root
+        # title: 80.2692 GeV -100 MeV
+        # crosssection: 0.252722
+        # style:
+        # linecolor: kCyan
+        # - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_80.1192_MuMET_wpjj_5mil.root
+        # title: 80.1192 GeV -250 MeV
+        # crosssection: 0.251018
+        # style:
+        # linecolor: kGreen     
+  - path: /disk/moose/general/FutureWMass/samples/testdata_blind_mw.root
+    title: 80.3692 GeV testMass
+    crosssection: 0.7
+    style:
+      linecolor: kBlack

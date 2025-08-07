@@ -1,0 +1,37 @@
+ratio:
+  # reference: 1
+  yaxis:
+    min: 0.9
+    max: 1.1
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.6192_4mil.root
+    title: 80.6192 GeV +250 MeV
+    crosssection: 1.7768
+    style:
+      linecolor: kOrange
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_MUSIC_80.2692_4mil.root
+    title: 80.2692 GeV +250 MeV
+    crosssection: 0.5
+    style:
+      linecolor: kBlue
+  #- path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_Met_TES_80.3692_MuC_epem_10k/Events/run_01/tag_1_delphes_events.root
+  #  title: 80.3692 GeV PDG Mass CS
+  #  crosssection: 1.12589
+  #  style:
+  #    linecolor: kBlue
+  #- path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_Met_TES_80.3692_MuC_epem_10k_2/Events/run_01/tag_1_delphes_events.root
+  #   title: 80.3692 GeV -1GeV
+  #    # crosssection: 0.712
+  #  style:
+  #    linecolor: kPink
+
+        # - path: /disk/moose/general/FutureWMass/samples/mdonla/PROC_pip_leptonic_80.3692_MuC_1mil_1/Events/run_01/tag_1_delphes_events.root
+        # title: MUSIC
+        # style:
+        # linecolor: kMagenta
+
+  
+
+
+

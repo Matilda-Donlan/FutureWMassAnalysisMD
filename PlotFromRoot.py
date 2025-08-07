@@ -49,14 +49,14 @@ def plot_and_save_TH1(hname, *args, ratio=None):
         if h_ref is not None:
             hrat=hist.Clone()
             hrat.Divide(h_ref)
-            hs_ratio.Add(hrat, 'HIST')
+            hs_ratio.Add(hrat, 'E')
 
     # Draw stack
     pad.cd()
     hs.Draw("nostack")
     hs.GetXaxis().SetTitle(exhist.GetXaxis().GetTitle())
     hs.GetYaxis().SetTitle(exhist.GetYaxis().GetTitle())
-    pad.BuildLegend(0.6,0.95-0.07*len(args),0.95,0.95)
+    pad.BuildLegend(0.7,0.95-0.07*len(args),0.95,0.95)
     pad.Update()
 
     # Draw ratio (if requested)
@@ -164,6 +164,7 @@ def main(runconfig_path, nevents=-1):
             # Add file to the sample
             sample.add_file(p)
         sample.style=input.get('style', {})
+        sample.crosssection=input.get('crosssection', 1)
         sample.open()
 
         samples.append(sample)

@@ -1,0 +1,10 @@
+root_file: histograms_pseudo_and_others_1.root
+nominal_histogram: 80.3692 Pseudo
+histograms_to_compare:
+  - 80.1192 -250 MeV
+  - 80.3692 PDG Mass
+  - 80.3192 -50 MeV
+  - 80.4192 +50 MeV
+    #- 80.4692 +100 MeV
+    #- 80.6192 +250 MeV
+distribution: test_pseudo_and_semilep_others_semilep_leptonPt

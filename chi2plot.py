@@ -1,20 +1,15 @@
-"""
-Created on Fri Jul 26 16:07:41 2024
-
-@author: user288 (JS)
-"""
-
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
 
 plt.rcParams["figure.autolayout"] = True
-columns = ["Wmass", "Chi2"]
-df = pd.read_csv("/home/user312/FutureWMassAnalysis/outputChi2_test_pseudo_and_semilep_others_semilep_leptonPt.csv", usecols=columns)
+columns = ["W_mass", "Chi2"]
+df = pd.read_csv("/home/user312/FutureWMassAnalysis/outputChi2_5mil_7mass_and_pseudo_unspec_leptonic_mm_muon2Pt.csv", usecols=columns)
 
-mass = df.Wmass.str[:7]
+mass = df.W_mass.str[:7]
 x = mass.astype(float)
+print(x)
 y = df.Chi2
 #x = df.W_mass
 def parabola(x, a, b, c):
@@ -27,10 +22,11 @@ fit_B = parameters[1]
 fit_C = parameters[2]
 
 
-z = np.linspace(x[0], x[np.argmax(x)], 100)
-
+z = np.linspace(x[np.argmin(x)], x[np.argmax(x)], 100)
+print(x[0])
+print(x[np.argmax(x)])
 fit_y = parabola(z, fit_A, fit_B, fit_C)
-
+print(fit_y)
 mw = - (fit_B)/(2*fit_A)
 
 perr = np.sqrt(np.diag(covariance))
@@ -57,10 +53,18 @@ print(mw)
 mw_up = mw + unc
 mw_lo = mw - unc
 
-plt.vlines(mw, 0, 60, 'k', '--', label=mw)
-plt.vlines(mw_up, 0, 60, 'r', '--', label=unc)
-plt.vlines(mw_lo, 0, 60, 'r', '--')
+#plt.vlines(mw, 0, plt.ylim(), 'k', '--', label=mw)
+#plt.vlines(mw_up, 0, 60, 'r', '--', label=unc)
+#plt.vlines(mw_lo, 0, 60, 'r', '--')
 
 plt.plot(x, y, 'o', label='Data')
 plt.plot(z, fit_y, '-', label='Fit')
+
+ylim = 0
+
+ylim = plt.ylim()[1]
+
+plt.vlines(mw, 0, ylim, 'k', '--', label=mw)
+plt.vlines(mw_up, 0, ylim, 'r', '--', label=unc)
+plt.vlines(mw_lo, 0, ylim, 'r', '--')
 plt.legend()

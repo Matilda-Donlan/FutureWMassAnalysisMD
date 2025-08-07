@@ -11,6 +11,7 @@ class Sample:
         self.Electron=None
         self.Jet=None
         #self.JetPF=None
+        self.crosssection=1
         self.FatJet=None
         self.MissingET=None
 

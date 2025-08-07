@@ -1,0 +1,20 @@
+ratio:
+  reference: 1
+  yaxis:
+    min: 0.9
+    max: 1.1
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_leptonic_80.3192_5mil.root
+    title: 80.3192 GeV
+    style:
+      linecolor: kPink
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_leptonic_80.3692_5mil.root
+    title: 80.3692 GeV
+    style:
+      linecolor: kViolet
+  - path: /disk/moose/general/FutureWMass/samples/mdonla/merged_pip_leptonic_80.4192_5mil.root
+    title: 80.4192 GeV
+    style:
+      linecolor: kTeal
+

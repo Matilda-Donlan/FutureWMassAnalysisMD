@@ -39,5 +39,9 @@ inputs:
     title: 80.1192 GeV -250 MeV
     crosssection: 1.80302
     style:
-       linecolor: kGreen     
-
+      linecolor: kGreen     
+  - path: /disk/moose/general/FutureWMass/samples/testdata_blind_mw.root
+    title: 80.3692 GeV testMass
+    crosssection: 1.7897
+    style:
+      linecolor: kBlack

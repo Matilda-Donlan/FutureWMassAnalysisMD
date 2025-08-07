@@ -1,0 +1,17 @@
+ratio:
+  # reference: 1
+  yaxis:
+    min: 0.9
+    max: 1.1
+    title: ratio
+inputs:
+  - path: /disk/moose/general/FutureWMass/samples/testdata_blind_mw.root
+    title: 80.3692 GeV testMass
+      #crosssection: 1.7768
+    style:
+      linecolor: kOrange
+
+  
+
+
+
